@@ -1,3 +1,35 @@
 body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+:root { font-family: Verdana; margin: 0 0 0 0; text-align: center; }
+
+nav { display: flex; position: fixed; flex-direction: row; background-color: #0072b1; padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100%; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; }
+
+.navlink { color: white; padding: 1rem; text-decoration: none; margin-top: 0px; }
+
+a { text-decoration: none; }
+
+#main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+.project-tile { box-shadow: 2px 2px 2px 2px #888888; background-color: #E6E6E6; padding-left: 2rem; padding-right: 2rem; justify-content: center; }
+
+.project-tile:hover, .scroll:hover { background-color: #0072b1; color: white; }
+
+@media only screen and (max-width: 600px) { body { width: 100%; } }
+
+#welcome-section, #projects, #contact { height: 100vh; padding-top: 10rem; }
+
+#show { display: flex; flex-direction: row; }
+
+.scroll { background-color: white; box-shadow: 2px 2px 2px 2px #888888; border-style: none; padding: 1rem; }
+
+#welcome-section { background: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"); right: 0px; left: 0px; width: 100vw; }
+
+#projects { background: #E5F0F7; width: 100vw; align-items: center; }
+
+#contact { background: #0072b1; width: 100vw; }
+
+footer { background-color: #0072b1; margin-bottom: 0px; }
+
+.light-text { color: white; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,5 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "coming soon"
 ---
-
-## You're ready to go!
-
-Start developing your Jekyll website.
+<h1>coming soon</h1>

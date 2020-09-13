@@ -18,7 +18,7 @@ a { text-decoration: none; }
 
 #welcome-section, #projects, #contact { height: 100vh; padding-top: 10rem; }
 
-#show { display: flex; flex-direction: row; }
+#show { display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
 .scroll { background-color: var(--light); box-shadow: 2px 2px 2px 2px var(--shadow); border-style: none; padding: 1rem; }
 

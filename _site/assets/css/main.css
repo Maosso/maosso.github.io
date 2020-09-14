@@ -1,35 +1,35 @@
 body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-family: Verdana; margin: 0 0 0 0; text-align: center; }
+:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0072b1; --light: white; --tert: #003958; --shadow: #888888; }
 
-nav { display: flex; position: fixed; flex-direction: row; background-color: #0072b1; padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100%; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; }
+nav { display: flex; position: fixed; flex-direction: row; background-color: var(--dark); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; }
 
-.navlink { color: white; padding: 1rem; text-decoration: none; margin-top: 0px; }
+.navlink { color: var(--light); padding: 1rem; text-decoration: none; margin-top: 0px; }
 
 a { text-decoration: none; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.project-tile { box-shadow: 2px 2px 2px 2px #888888; background-color: #E6E6E6; padding-left: 2rem; padding-right: 2rem; justify-content: center; }
+.project-tile { box-shadow: 2px 2px 2px 2px #888888; background-color: var(--light); padding-left: 2rem; padding-right: 2rem; justify-content: center; }
 
-.project-tile:hover, .scroll:hover { background-color: #0072b1; color: white; }
+.project-tile:hover, .scroll:hover { background-color: var(--dark); color: var(--light); }
 
-@media only screen and (max-width: 600px) { body { width: 100%; } }
+@media only screen and (max-width: 600px) { body { width: 100vw; } }
 
 #welcome-section, #projects, #contact { height: 100vh; padding-top: 10rem; }
 
-#show { display: flex; flex-direction: row; }
+#show { display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
-.scroll { background-color: white; box-shadow: 2px 2px 2px 2px #888888; border-style: none; padding: 1rem; }
+.scroll { background-color: var(--light); box-shadow: 2px 2px 2px 2px var(--shadow); border-style: none; padding: 1rem; }
 
 #welcome-section { background: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"); right: 0px; left: 0px; width: 100vw; }
 
-#projects { background: #E5F0F7; width: 100vw; align-items: center; }
+#projects { background-color: var(--tert); width: 100vw; align-items: center; }
 
-#contact { background: #0072b1; width: 100vw; }
+#contact { background: var(--dark); width: 100vw; }
 
-footer { background-color: #0072b1; margin-bottom: 0px; }
+footer { background-color: var(--dark); margin-bottom: 0px; }
 
-.light-text { color: white; }
+.light-text { color: var(--light); }
 
 /*# sourceMappingURL=main.css.map */

@@ -54,6 +54,8 @@ a {
   padding-left: 2rem;
   padding-right: 2rem;
   justify-content: center;
+  width: 10rem;
+  height: 10rem;
 }
 
 .project-tile:hover, .scroll:hover {
@@ -81,7 +83,7 @@ a {
 
 .scroll {
   background-color: var(--light);
-  box-shadow: 2px 2px 2px 2px var(--shadow);
+  box-shadow: 0px 2px 2px 0px var(--shadow);
   border-style: none;
   padding: 1rem;
 }

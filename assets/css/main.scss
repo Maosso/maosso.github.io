@@ -50,10 +50,20 @@ a {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    background-image: linear-gradient(var(--dark), var(--light));
+    background-image: radial-gradient(circle, var(--dark), var(--light));
     position: absolute;
     right: 0px;
 }
+
+.m-circle {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, var(--dark), var(--light));
+    position: absolute;
+    right: 0px;
+}
+
 
 #main-doc {
   display: flex;
@@ -81,6 +91,7 @@ a {
 @media only screen and (max-width: 600px) {
   body {
     width: 100vw;
+    font-size: 0.5rem;
   }
 }
 

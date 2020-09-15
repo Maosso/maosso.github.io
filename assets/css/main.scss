@@ -8,11 +8,11 @@
     text-de: en-US;
     margin: 0 0 0 0;
     text-align: center;
-    --dark: #ffdd03;
-    --light: #0325ff;
+    --dark: #0040ff;
+    --light: #ffbf00;
     --tert: #003958;
     --shadow: #888888;
-    --p-light: #ffff54
+    --p-light: #00a3fe;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
   z-index: 1000;
   top: 0px;
   left: 0px;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .navlink {
@@ -73,13 +73,19 @@ a {
 
 #welcome-section, #projects, #contact {
   height: 100vh;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
-#show {
+.show-grid {
   display: grid;
   justify-content: center;
   align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 0;
+  margin-bottom: 6rem;
 }
 
 .scroll {
@@ -109,6 +115,7 @@ a {
 
 footer {
   background-color: var(--dark);
+  color: var(--light);
   display: flex;
   position: fixed;
   padding-top: 0.0001rem;

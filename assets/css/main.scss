@@ -18,6 +18,7 @@ nav {
   display: flex;
   position: fixed;
   flex-direction: row;
+  justify-content: flex-end;
   background-color: var(--dark);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -86,7 +87,9 @@ a {
   box-shadow: 0px 2px 2px 0px var(--shadow);
   border-style: none;
   padding: 1rem;
+  bottom: 5rem;
 }
+/*.scroll doesn't work how it should yet*/
 
 #welcome-section {
   background: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");

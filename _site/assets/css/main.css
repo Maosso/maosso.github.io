@@ -2,7 +2,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 :root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0072b1; --light: white; --tert: #003958; --shadow: #888888; }
 
-nav { display: flex; position: fixed; flex-direction: row; background-color: var(--dark); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; }
+nav { display: flex; position: fixed; flex-direction: row; justify-content: flex-end; background-color: var(--dark); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; }
 
 .navlink { color: var(--light); padding: 1rem; text-decoration: none; margin-top: 0px; }
 
@@ -10,7 +10,7 @@ a { text-decoration: none; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.project-tile { box-shadow: 2px 2px 2px 2px #888888; background-color: var(--light); padding-left: 2rem; padding-right: 2rem; justify-content: center; }
+.project-tile { box-shadow: 2px 2px 2px 2px #888888; background-color: var(--light); padding-left: 2rem; padding-right: 2rem; justify-content: center; width: 10rem; height: 10rem; }
 
 .project-tile:hover, .scroll:hover { background-color: var(--dark); color: var(--light); }
 
@@ -20,8 +20,9 @@ a { text-decoration: none; }
 
 #show { display: flex; flex-direction: row; justify-content: center; align-items: center; }
 
-.scroll { background-color: var(--light); box-shadow: 2px 2px 2px 2px var(--shadow); border-style: none; padding: 1rem; }
+.scroll { background-color: var(--light); box-shadow: 0px 2px 2px 0px var(--shadow); border-style: none; padding: 1rem; bottom: 5rem; }
 
+/*.scroll doesn't work how it should yet*/
 #welcome-section { background: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"); right: 0px; left: 0px; width: 100vw; }
 
 #projects { background-color: var(--tert); width: 100vw; align-items: center; }

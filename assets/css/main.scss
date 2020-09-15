@@ -12,7 +12,7 @@
     --light: #ffbf00;
     --tert: #003958;
     --shadow: #888888;
-    --p-light: #00a3fe;
+    --p-light: #FFFDD0;
     font-size: 12px;
 }
 
@@ -20,7 +20,7 @@ nav {
   display: flex;
   position: fixed;
   flex-direction: row;
-  background-color: var(--dark);
+  background-image: linear-gradient(to right, var(--dark), var(--light));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100vw;
@@ -33,7 +33,7 @@ nav {
 }
 
 .navlink {
-  color: var(--light);
+  color: var(--dark);
   padding: 1rem;
   text-decoration: none;
   margin-top: 0px
@@ -43,8 +43,17 @@ a {
   text-decoration: none;
 }
 
-h1 {
-    font-size: 2rem;}
+.welcome-header {
+    font-size: 10rem;}
+
+.s-circle {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--dark), var(--light));
+    position: absolute;
+    right: 0px;
+}
 
 #main-doc {
   display: flex;
@@ -107,7 +116,7 @@ h1 {
 }
 
 #projects {
-  background-color: var(--light);
+  background-image: linear-gradient(to right, var(--dark), var(--light));
   width: 100vw;
   align-items: center;
   color: var(--dark);
@@ -120,8 +129,8 @@ h1 {
 }
 
 footer {
-  background-color: var(--dark);
-  color: var(--light);
+  background-image: linear-gradient(to right, var(--dark), var(--light));
+  color: var(--dark);
   display: flex;
   position: fixed;
   width: 100vw;

@@ -1,14 +1,16 @@
 body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #00a3fe; font-size: 12px; }
+:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; font-size: 12px; }
 
-nav { display: flex; position: fixed; flex-direction: row; background-color: var(--dark); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; justify-content: flex-end; }
+nav { display: flex; position: fixed; flex-direction: row; background-image: linear-gradient(to right, var(--dark), var(--light)); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; justify-content: flex-end; }
 
-.navlink { color: var(--light); padding: 1rem; text-decoration: none; margin-top: 0px; }
+.navlink { color: var(--dark); padding: 1rem; text-decoration: none; margin-top: 0px; }
 
 a { text-decoration: none; }
 
-h1 { font-size: 2rem; }
+.welcome-header { font-size: 10rem; }
+
+.s-circle { height: 4rem; width: 4rem; border-radius: 50%; background-image: linear-gradient(var(--dark), var(--light)); position: absolute; right: 0px; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
@@ -26,11 +28,11 @@ h1 { font-size: 2rem; }
 
 .scroll:hover { color: var(--light); }
 
-#projects { background-color: var(--light); width: 100vw; align-items: center; color: var(--dark); }
+#projects { background-image: linear-gradient(to right, var(--dark), var(--light)); width: 100vw; align-items: center; color: var(--dark); }
 
 #welcome-section, #contact { background: var(--p-light); width: 100vw; color: var(--light); }
 
-footer { background-color: var(--dark); color: var(--light); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }
+footer { background-image: linear-gradient(to right, var(--dark), var(--light)); color: var(--dark); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }
 
 .light-text { color: var(--light); }
 

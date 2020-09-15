@@ -48,10 +48,11 @@ a {
 
 .section-header {
     font-size: 3rem;
-    color: var(--light)
+    color: var(--light);
+    padding-bottom: 3rem;
 }
 
-.s-circle {
+.s-circle-right {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -60,7 +61,7 @@ a {
     right: 0px;
 }
 
-.m-circle {
+.m-circle-right {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
@@ -69,9 +70,25 @@ a {
     right: 0px;
 }
 
-.circle-box {
-    display: flex;
+.s-circle-left {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--dark);
+    position: absolute;
+    left: 0px;
 }
+
+.m-circle-left {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background: var(--light);
+    position: absolute;
+    right: 0px;
+}
+
+
 
 #main-doc {
   display: flex;

@@ -20,7 +20,7 @@ nav {
   display: flex;
   position: fixed;
   flex-direction: row;
-  background-image: linear-gradient(to right, var(--dark), var(--light));
+  background-image: linear-gradient(to right, var(--dark), #00b365);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100vw;
@@ -82,7 +82,7 @@ a {
 }
 
 .project-tile {
-  box-shadow: 2px 2px 2px 2px var(--p-light);
+  /*box-shadow: 2px 2px 2px 2px var(--p-light);*/
   background-color: var(--dark);
   padding-left: 2rem;
   padding-right: 2rem;
@@ -126,7 +126,7 @@ a {
 .scroll {
   background-color: var(--light);
   color: var(--dark);
-  box-shadow: 0px 2px 2px 0px var(--p-light);
+  /*box-shadow: 0px 2px 2px 0px var(--p-light);*/
   border-style: none;
   padding: 1rem;
 }
@@ -136,7 +136,7 @@ a {
 }
 
 #projects {
-  background-image: linear-gradient(to right, var(--dark), var(--light));
+  background-image: linear-gradient(to right, var(--dark), #00b365);
   width: 100vw;
   align-items: center;
   color: var(--dark);
@@ -149,7 +149,7 @@ a {
 }
 
 footer {
-  background-image: linear-gradient(to right, var(--dark), var(--light));
+  background-image: linear-gradient(to right, var(--dark), #00b365);
   color: var(--dark);
   display: flex;
   position: fixed;

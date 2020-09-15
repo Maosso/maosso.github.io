@@ -10,7 +10,7 @@ a { text-decoration: none; }
 
 .welcome-header { font-size: 10rem; }
 
-.section-header { font-size: 5rem; text-decoration: underline; }
+.section-header { font-size: 3rem; color: var(--light); }
 
 .s-circle { height: 4rem; width: 4rem; border-radius: 50%; background: var(--dark); position: absolute; right: 0px; }
 
@@ -20,13 +20,11 @@ a { text-decoration: none; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--dark); padding-left: 2rem; padding-right: 2rem; justify-content: center; width: 10rem; height: 10rem; }
+.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--light); padding-left: 2rem; padding-right: 2rem; justify-content: center; width: 10rem; height: 10rem; }
 
 .project-tile:hover, .scroll:hover { background-color: var(--p-light); color: var(--light); }
 
 @media only screen and (max-width: 600px) { body { width: 100vw; height: 100vh; font-size: 0.5rem; } }
-
-#welcome-section, #projects, #contact { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; }
 
 .show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-gap: 4rem; width: 100%; max-width: 1280px; margin: 0 0; margin-bottom: 6rem; }
 
@@ -34,9 +32,9 @@ a { text-decoration: none; }
 
 .scroll:hover { color: var(--light); }
 
-#projects { background-image: linear-gradient(to right, var(--dark), #00b365); width: 100vw; align-items: center; color: var(--dark); }
+.screen { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; }
 
-#welcome-section, #contact { background: var(--p-light); width: 100vw; color: var(--light); }
+#projects { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); }
 
 footer { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }
 

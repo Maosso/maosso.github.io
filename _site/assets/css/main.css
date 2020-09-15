@@ -10,9 +10,13 @@ a { text-decoration: none; }
 
 .welcome-header { font-size: 10rem; }
 
-.s-circle { height: 4rem; width: 4rem; border-radius: 50%; background-image: radial-gradient(circle, var(--dark), var(--light)); position: absolute; right: 0px; }
+.section-header { font-size: 5rem; text-decoration: underline; }
 
-.m-circle { height: 12rem; width: 12rem; border-radius: 50%; background-image: radial-gradient(circle, var(--dark), var(--light)); position: absolute; right: 0px; }
+.s-circle { height: 4rem; width: 4rem; border-radius: 50%; background: var(--dark); position: absolute; right: 0px; }
+
+.m-circle { height: 12rem; width: 12rem; border-radius: 50%; background: var(--light); position: absolute; right: 0px; }
+
+.circle-box { display: flex; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 

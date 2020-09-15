@@ -13,6 +13,7 @@
     --tert: #003958;
     --shadow: #888888;
     --p-light: #00a3fe;
+    font-size: 12px;
 }
 
 nav {
@@ -42,6 +43,9 @@ a {
   text-decoration: none;
 }
 
+h1 {
+    font-size: 2rem;}
+
 #main-doc {
   display: flex;
   flex-direction: column;
@@ -51,7 +55,7 @@ a {
 }
 
 .project-tile {
-  box-shadow: 2px 2px 2px 2px #888888;
+  box-shadow: 2px 2px 2px 2px var(--p-light);
   background-color: var(--dark);
   padding-left: 2rem;
   padding-right: 2rem;
@@ -72,13 +76,15 @@ a {
 }
 
 #welcome-section, #projects, #contact {
-  height: 100vh;
+  height: calc(100vh - 12rem);
   padding-top: 8rem;
+  left: 0px;
+  right: 0px;
 }
 
 .show-grid {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -91,7 +97,7 @@ a {
 .scroll {
   background-color: var(--light);
   color: var(--dark);
-  box-shadow: 0px 2px 2px 0px var(--shadow);
+  box-shadow: 0px 2px 2px 0px var(--p-light);
   border-style: none;
   padding: 1rem;
 }
@@ -118,8 +124,6 @@ footer {
   color: var(--light);
   display: flex;
   position: fixed;
-  padding-top: 0.0001rem;
-  padding-bottom: 0.0001rem;
   width: 100vw;
   margin-top: 0px;
   font-weight: 900;

@@ -178,11 +178,6 @@ a {
   margin-bottom: 6rem;
 }
 
-@media (max-width: 30.625em) {
-  .screen {
-    padding: 6rem 1rem;
-  }
-
 .scroll {
   background-color: var(--light);
   color: var(--dark);
@@ -195,8 +190,23 @@ a {
  color: var(--light);
 }
 
-.screen {
+.fullscreen {
   height: calc(100vh - 12rem);
+  padding-top: 8rem;
+  left: 0px;
+  right: 0px;
+  background-color: var(--p-light);
+  width: 100vw;
+  color: var(--light);
+  align-items: center;
+}
+
+@media (max-width: 30.625em) {
+  .screen {
+    padding: 6rem 1rem;
+  }
+
+.nofullscreen  {
   padding-top: 8rem;
   left: 0px;
   right: 0px;

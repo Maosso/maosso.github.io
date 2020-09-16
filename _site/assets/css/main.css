@@ -1,6 +1,6 @@
 body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; font-size: 16px; }
+:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; /*font-size: 16px; no need to specify this because it is the default for most browsers*/ }
 
 nav { display: flex; position: fixed; flex-direction: row; background-image: linear-gradient(to right, var(--dark), #00b365); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; justify-content: flex-end; }
 
@@ -26,7 +26,7 @@ a { text-decoration: none; }
 
 .project-tile:hover, .scroll:hover { background-color: var(--p-light); color: var(--light); }
 
-@media only screen and (max-width: 600px) { body { width: 100vw; height: 100vh; font-size: 0.5rem; } }
+@media only screen and (max-width: 600px) { body { width: 100vw; height: 100vh; font-size: 0.2em; } }
 
 .show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-gap: 4rem; width: 100%; margin: 0 0; margin-bottom: 6rem; }
 

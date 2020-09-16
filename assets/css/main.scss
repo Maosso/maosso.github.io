@@ -13,7 +13,7 @@
     --tert: #003958;
     --shadow: #888888;
     --p-light: #FFFDD0;
-    font-size: 16px;
+    /*font-size: 16px; no need to specify this because it is the default for most browsers*/
 }
 
 nav {
@@ -118,7 +118,7 @@ a {
   body {
     width: 100vw;
     height: 100vh;
-    font-size: 0.5rem;
+    font-size: 0.2em;
   }
 }
 

@@ -59,6 +59,7 @@ a {
     background: var(--dark);
     position: absolute;
     right: 0px;
+    z-index: 999;
 }
 
 .m-circle {
@@ -68,6 +69,7 @@ a {
     background: var(--light);
     position: absolute;
     right: 0px;
+    z-index: 1000;
 }
 
 .circle-box {
@@ -92,6 +94,7 @@ a {
   justify-content: center;
   width: 19rem;
   height: 19rem;
+  border-radius: 50%;
 }
 
 .project-tile:hover, .scroll:hover {
@@ -126,6 +129,11 @@ a {
   padding: 1rem;
 }
 
+/*direct child selector*/
+section > a {
+      font-size: 1.5rem;
+    }
+
 .scroll:hover {
  color: var(--light);
 }
@@ -139,6 +147,7 @@ a {
   width: 100vw;
   color: var(--light);
   align-items: center;
+  overflow: auto;
 }
 
 #projects {

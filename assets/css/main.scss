@@ -92,6 +92,8 @@ a {
   padding-left: 2rem;
   padding-right: 2rem;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   width: 19rem;
   height: 19rem;
   border-radius: 50%;
@@ -150,7 +152,7 @@ section > a {
   overflow: auto;
 }
 
-#projects {
+#proj {
   background-image: linear-gradient(to right, var(--dark), #00b365);
   color: var(--dark);
 }

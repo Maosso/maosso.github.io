@@ -48,7 +48,8 @@ a {
 
 .section-header {
     font-size: 3rem;
-    color: var(--light)
+    color: var(--light);
+    padding-bottom: 4rem;
 }
 
 .s-circle {
@@ -88,8 +89,8 @@ a {
   padding-left: 2rem;
   padding-right: 2rem;
   justify-content: center;
-  width: 10rem;
-  height: 10rem;
+  width: 19rem;
+  height: 19rem;
 }
 
 .project-tile:hover, .scroll:hover {
@@ -97,10 +98,10 @@ a {
   color: var(--light);
 }
 
-@media only screen and (max-width: 600px) {
-  body {
+@media (max-width: 600px) {
+  html {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-size: 0.5rem;
   }
 }

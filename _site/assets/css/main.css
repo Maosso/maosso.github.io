@@ -1,20 +1,6 @@
 body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; /*font-size: 16px; no need to specify this because it is the default for most browsers*/ }
-
-/* box-sizing and font sizing */
-*, *::before, *::after { box-sizing: inherit; }
-
-html { box-sizing: border-box; /* Set font size for easy rem calculations default document font size = 16px, 1rem = 16px, 100% = 16px (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px */ font-size: 62.5%; scroll-behavior: smooth; }
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) { html { font-size: 60%; } }
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) { html { font-size: 58%; } }
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) { html { font-size: 55%; } }
+:root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; font-size: 12px; }
 
 nav { display: flex; position: fixed; flex-direction: row; background-image: linear-gradient(to right, var(--dark), #00b365); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; justify-content: flex-end; }
 
@@ -24,7 +10,7 @@ a { text-decoration: none; }
 
 .welcome-header { font-size: 10rem; }
 
-.section-header { font-size: 3rem; color: var(--light); }
+.section-header { font-size: 3rem; color: var(--light); padding-bottom: 4rem; }
 
 .s-circle { height: 4rem; width: 4rem; border-radius: 50%; background: var(--dark); position: absolute; right: 0px; }
 
@@ -34,11 +20,11 @@ a { text-decoration: none; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--light); color: var(--dark); padding-left: 2rem; padding-right: 2rem; justify-content: center; width: 10rem; height: 10rem; }
+.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--light); color: var(--dark); padding-left: 2rem; padding-right: 2rem; justify-content: center; width: 19rem; height: 19rem; }
 
 .project-tile:hover, .scroll:hover { background-color: var(--p-light); color: var(--light); }
 
-@media only screen and (max-width: 600px) { body { width: 100vw; height: 100vh; font-size: 0.5rem; } }
+@media (max-width: 600px) { html { width: 100vw; height: 100%; font-size: 0.5rem; } }
 
 .show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-gap: 4rem; width: 100%; margin: 0 0; margin-bottom: 6rem; }
 

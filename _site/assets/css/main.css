@@ -2,6 +2,15 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 :root { font-family: Verdana; text-de: en-US; margin: 0 0 0 0; text-align: center; --dark: #0040ff; --light: #ffbf00; --tert: #003958; --shadow: #888888; --p-light: #FFFDD0; /*font-size: 16px; no need to specify this because it is the default for most browsers*/ }
 
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) { html { font-size: 60%; } }
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) { html { font-size: 58%; } }
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) { html { font-size: 55%; } }
+
 nav { display: flex; position: fixed; flex-direction: row; background-image: linear-gradient(to right, var(--dark), #00b365); padding-top: 0.5rem; padding-bottom: 0.5rem; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; top: 0px; left: 0px; justify-content: flex-end; }
 
 .navlink { color: var(--dark); padding: 1rem; text-decoration: none; margin-top: 0px; }

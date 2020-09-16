@@ -117,6 +117,7 @@ a {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(auto-fit); /*I added this to check if it solves the mobile issue*/
   grid-gap: 4rem;
   width: 100%;
   margin: 0 0;
@@ -149,16 +150,16 @@ section > a {
   width: 100vw;
   color: var(--light);
   align-items: center;
-  overflow: auto;
+/*  overflow: auto;*/
 }
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .screen {
     width: 100vw;
     height: auto;
     font-size: 0.5rem;
   }
-}
+}*/
 
 
 #proj {

@@ -26,7 +26,7 @@ a { text-decoration: none; }
 
 @media (max-width: 600px) { html { width: 100vw; height: 100vh; font-size: 0.5rem; } }
 
-.show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-gap: 4rem; width: 100%; margin: 0 0; margin-bottom: 6rem; }
+.show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-template-rows: repeat(auto-fit); /*I added this to check if it solves the mobile issue*/ grid-gap: 4rem; width: 100%; margin: 0 0; margin-bottom: 6rem; }
 
 .scroll { background-color: var(--light); color: var(--dark); /*box-shadow: 0px 2px 2px 0px var(--p-light);*/ border-style: none; padding: 1rem; }
 
@@ -35,10 +35,9 @@ section > a { font-size: 1.5rem; }
 
 .scroll:hover { color: var(--light); }
 
-.screen { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; overflow: auto; }
+.screen { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; /*  overflow: auto;*/ }
 
-@media (max-width: 600px) { .screen { width: 100vw; height: auto; font-size: 0.5rem; } }
-
+/*@media (max-width: 600px) { .screen { width: 100vw; height: auto; font-size: 0.5rem; } }*/
 #proj { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); }
 
 footer { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }

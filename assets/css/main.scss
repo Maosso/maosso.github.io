@@ -92,6 +92,11 @@ a {
     padding-bottom: 3rem;
 }
 
+@media (max-width: 28.75em) {
+  .section-header {
+    font-size: 4rem;
+  }
+
 .s-circle-right {
     height: 4rem;
     width: 4rem;
@@ -172,6 +177,11 @@ a {
   margin: 0 0;
   margin-bottom: 6rem;
 }
+
+@media (max-width: 30.625em) {
+  .screen {
+    padding: 6rem 1rem;
+  }
 
 .scroll {
   background-color: var(--light);

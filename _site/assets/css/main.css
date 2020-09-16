@@ -26,6 +26,8 @@ a { text-decoration: none; }
 
 .project-tile:hover, .scroll:hover { background-color: var(--p-light); color: var(--light); }
 
+.project-tile-title { font-size: 2rem; }
+
 @media (max-width: 600px) { html { width: 100vw; height: 100vh; font-size: 0.5rem; } }
 
 .show-grid { display: grid; justify-items: center; align-items: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-template-rows: repeat(auto-fit); /*I added this to check if it solves the mobile issue*/ grid-gap: 4rem; width: 100%; margin: 0 0; margin-bottom: 6rem; }

@@ -10,6 +10,8 @@ a { text-decoration: none; }
 
 .welcome-header { font-size: 10rem; }
 
+.welcome-subheader { padding-bottom: 4rem; font-size: 2rem; }
+
 .section-header { font-size: 3rem; color: var(--light); padding-bottom: 4rem; }
 
 .s-circle { height: 4rem; width: 4rem; border-radius: 50%; background: var(--dark); position: absolute; right: 0px; z-index: 999; }
@@ -35,7 +37,7 @@ section > a { font-size: 1.5rem; }
 
 .scroll:hover { color: var(--light); }
 
-.screen { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; /*  overflow: auto;*/ }
+.screen { min-height: calc(100vh - 12rem); padding-top: 8rem; padding-bottom: 4rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; /*  overflow: auto;*/ }
 
 /*@media (max-width: 600px) { .screen { width: 100vw; height: auto; font-size: 0.5rem; } }*/
 #proj { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); }

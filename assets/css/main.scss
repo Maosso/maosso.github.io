@@ -44,7 +44,13 @@ a {
 }
 
 .welcome-header {
-    font-size: 10rem;}
+    font-size: 10rem;
+}
+
+.welcome-subheader {
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
 
 .section-header {
     font-size: 3rem;
@@ -142,8 +148,9 @@ section > a {
 }
 
 .screen {
-  height: calc(100vh - 12rem);
+  min-height: calc(100vh - 12rem);
   padding-top: 8rem;
+  padding-bottom: 4rem;
   left: 0px;
   right: 0px;
   background-color: var(--p-light);

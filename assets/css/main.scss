@@ -152,6 +152,15 @@ section > a {
   overflow: auto;
 }
 
+@media (max-width: 600px) {
+  .screen {
+    width: 100vw;
+    height: auto;
+    font-size: 0.5rem;
+  }
+}
+
+
 #proj {
   background-image: linear-gradient(to right, var(--dark), #00b365);
   color: var(--dark);

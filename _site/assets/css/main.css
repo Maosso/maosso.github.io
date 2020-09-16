@@ -37,6 +37,8 @@ section > a { font-size: 1.5rem; }
 
 .screen { height: calc(100vh - 12rem); padding-top: 8rem; left: 0px; right: 0px; background-color: var(--p-light); width: 100vw; color: var(--light); align-items: center; overflow: auto; }
 
+@media (max-width: 600px) { .screen { width: 100vw; height: auto; font-size: 0.5rem; } }
+
 #proj { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); }
 
 footer { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }

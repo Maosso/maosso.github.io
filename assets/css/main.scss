@@ -13,47 +13,7 @@
     --tert: #003958;
     --shadow: #888888;
     --p-light: #FFFDD0;
-    /*font-size: 16px; no need to specify this because it is the default for most browsers*/
-}
-
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
+    font-size: 12px;
 }
 
 nav {
@@ -88,16 +48,10 @@ a {
 
 .section-header {
     font-size: 3rem;
-    color: var(--light);
-    padding-bottom: 3rem;
+    color: var(--light)
 }
 
-@media (max-width: 28.75em) {
-  .section-header {
-    font-size: 4rem;
-  }
-
-.s-circle-right {
+.s-circle {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -106,7 +60,7 @@ a {
     right: 0px;
 }
 
-.m-circle-right {
+.m-circle {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
@@ -115,25 +69,9 @@ a {
     right: 0px;
 }
 
-.s-circle-left {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    background: var(--dark);
-    position: absolute;
-    left: 0px;
+.circle-box {
+    display: flex;
 }
-
-.m-circle-left {
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-    background: var(--light);
-    position: absolute;
-    right: 0px;
-}
-
-
 
 #main-doc {
   display: flex;
@@ -190,23 +128,8 @@ a {
  color: var(--light);
 }
 
-.fullscreen {
+.screen {
   height: calc(100vh - 12rem);
-  padding-top: 8rem;
-  left: 0px;
-  right: 0px;
-  background-color: var(--p-light);
-  width: 100vw;
-  color: var(--light);
-  align-items: center;
-}
-
-@media (max-width: 30.625em) {
-  .screen {
-    padding: 6rem 1rem;
-  }
-
-.nofullscreen  {
   padding-top: 8rem;
   left: 0px;
   right: 0px;

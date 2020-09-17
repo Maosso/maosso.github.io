@@ -22,11 +22,11 @@ a { text-decoration: none; }
 
 #main-doc { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--light); color: var(--dark); padding-left: 2rem; padding-right: 2rem; justify-content: center; justify-items: center; align-items: center; width: 19rem; height: 19rem; border-radius: 50%; }
+.project-tile { /*box-shadow: 2px 2px 2px 2px var(--p-light);*/ background-color: var(--light); color: var(--dark); padding-left: 2rem; padding-right: 2rem; justify-content: center; justify-items: center; align-items: center; width: 19rem; height: 19rem; /*  border-radius: 50%;*/ }
 
-.project-tile:hover, .scroll:hover { background-color: var(--p-light); color: var(--light); }
+.project-tile:hover:active, .scroll:hover:active { background-color: var(--p-light); color: var(--light); }
 
-.project-tile-title { font-size: 2rem; }
+.project-tile-title { font-size: 2rem; padding-top: 2rem; }
 
 @media (max-width: 600px) { html { width: 100vw; height: 100vh; font-size: 0.5rem; } }
 

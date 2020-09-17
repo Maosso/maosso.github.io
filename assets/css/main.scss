@@ -102,16 +102,17 @@ a {
   align-items: center;
   width: 19rem;
   height: 19rem;
-  border-radius: 50%;
+/*  border-radius: 50%;*/
 }
 
-.project-tile:hover, .scroll:hover {
+.project-tile:hover:active, .scroll:hover:active {
   background-color: var(--p-light);
   color: var(--light);
 }
 
 .project-tile-title {
     font-size: 2rem;
+    padding-top: 2rem;
 }
 
 @media (max-width: 600px) {

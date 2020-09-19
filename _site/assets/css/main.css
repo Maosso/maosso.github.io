@@ -46,6 +46,8 @@ section > a { font-size: 1.5rem; }
 
 footer { background-image: linear-gradient(to right, var(--dark), #00b365); color: var(--dark); display: flex; position: fixed; width: 100vw; margin-top: 0px; font-weight: 900; z-index: 1000; bottom: 0px; left: 0px; justify-content: center; }
 
+@media (max-width: 600px) { footer { display: none; } }
+
 .light-text { color: var(--light); }
 
 .bar-50 { height: 1rem; width: 5rem; background-color: #ffbf00; }
